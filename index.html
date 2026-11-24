@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>K9 Pet Care — A True Home Away From Home For Your Best Friend</title>
-  <meta name="description" content="K9 Pet Care is a cage-free, loving home kennel. Premium boarding, daycare, training & spa for all breeds. 24/7 live cameras, fully air-conditioned, hospital-grade hygiene." />
+  <meta name="description" content="K9 Pet Care is a cage-free, loving home kennel. Premium boarding, daycare &amp; doorstep pet taxi for all breeds. 24/7 live cameras, fully air-conditioned, hospital-grade hygiene." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -25,6 +25,7 @@
       <nav class="main-nav" id="mainNav" aria-label="Primary">
         <a href="#philosophy">About</a>
         <a href="#services">Services</a>
+        <a href="#guests">Happy Guests</a>
         <a href="#difference">Why Us</a>
         <a href="#standards">Standards</a>
         <a href="#cameras">Live Cameras</a>
@@ -92,29 +93,297 @@
     <section class="section section-tint" id="services">
       <div class="container">
         <div class="section-head center">
-          <span class="kicker">Premium Services Suite</span>
+          <span class="kicker">Our Care Services</span>
           <h2>Everything Your Pup Needs To Thrive</h2>
-          <p class="section-sub">Our services address the holistic physical, mental, and emotional needs of your pet during their stay.</p>
+          <p class="section-sub">From cage-free luxury staycations and active daycare to comfortable doorstep pet cab transit — we treat your best friend like our own.</p>
         </div>
 
-        <div class="cards-grid grid-3">
+        <div class="cards-grid cards-services">
+          <!-- 1. Elite Boarding -->
           <article class="card service-card">
             <div class="card-ico ico-coral">🏠</div>
+            <span class="service-pill">Cage-Free Boarding</span>
             <h3>Elite Boarding</h3>
-            <p>An all-inclusive, cage-free luxury staycation. Includes tailored premium meals, a minimum of 3 daily walks, socialization blocks, and absolute integration into our household routines.</p>
+            <p>An all-inclusive, home-style luxury staycation. Includes tailored home-cooked or kibble meals, 3 daily scenic walks, supervised socialization, orthopedic beds, and complete family integration with zero cages.</p>
+            <ul class="service-features">
+              <li>24/7 Human presence &amp; cuddles</li>
+              <li>Live camera view on your phone</li>
+              <li>Frequent WhatsApp updates &amp; videos</li>
+            </ul>
           </article>
 
+          <!-- 2. Doggy Daycare -->
           <article class="card service-card">
             <div class="card-ico ico-yellow">☀️</div>
+            <span class="service-pill">Daytime Fun &amp; Play</span>
             <h3>Doggy Daycare</h3>
-            <p>Perfect for busy working parents. Drop your dog off for a day full of mental stimulation, interactive toys, monitored group play, and relaxing afternoon naps in AC luxury.</p>
+            <p>Perfect for busy pet parents. Drop your dog off for a stimulating day of monitored group play, enrichment puzzles, agility activities, and refreshing afternoon naps in cool AC luxury.</p>
+            <ul class="service-features">
+              <li>Safe, curated temperament matching</li>
+              <li>Mental stimulation &amp; brain games</li>
+              <li>Zero cooped-up boredom</li>
+            </ul>
           </article>
 
+          <!-- 3. Doorstep Pet Taxi -->
           <article class="card service-card">
-            <div class="card-ico ico-mint">🎓</div>
-            <h3>Positive Training</h3>
-            <p>While boarding, your dog can undergo basic obedience, socialization alignment, or leash manners training led by certified positive-reinforcement experts.</p>
+            <div class="card-ico ico-mint">🚐</div>
+            <span class="service-pill">Door-To-Door Transit</span>
+            <h3>Doorstep Pet Taxi</h3>
+            <p>Don't have time to battle city traffic? Our dedicated, sanitized, air-conditioned pet cab provides comfortable door-to-door pick-up and drop-off service across Chennai with secure safety restraints.</p>
+            <ul class="service-features">
+              <li>Fully air-conditioned travel comfort</li>
+              <li>Sanitized after every single trip</li>
+              <li>Direct live WhatsApp GPS tracking</li>
+            </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GUEST GALLERY & CAROUSEL ===================== -->
+    <section class="section carousel-section" id="guests">
+      <div class="container">
+        <div class="section-head center">
+          <span class="kicker">Hall of Paws</span>
+          <h2>Pets Who Stayed With Us 🐾</h2>
+          <p class="section-sub">Every dog who steps into our home leaves as an honorary family member. Meet some of our wonderful guests who enjoyed cage-free love, cozy couches, and unforgettable staycations.</p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="carousel-filters center" role="group" aria-label="Filter guest pets by stay type">
+          <button class="filter-chip active" data-filter="all">All Guests (10)</button>
+          <button class="filter-chip" data-filter="boarding">Boarding Guests</button>
+          <button class="filter-chip" data-filter="daycare">Daycare Pals</button>
+        </div>
+
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+          <div class="carousel-top-bar">
+            <span class="carousel-counter" id="carouselCounter" aria-live="polite">Guest 1 of 10</span>
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="carouselPrev" aria-label="Previous pet">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="carousel-btn" id="carouselNext" aria-label="Next pet">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-viewport" id="carouselViewport">
+            <div class="carousel-track" id="carouselTrack">
+
+              <!-- Pet 1: Bruno -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/rottweiler-bruno.jpg" alt="Bruno the gentle Rottweiler relaxing happily" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Boarding Alumni</span>
+                  <span class="guest-badge-breed">🐕 Rottweiler</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Bruno</h3>
+                    <span class="guest-tag">Gentle Giant</span>
+                  </div>
+                  <p class="guest-quote">"The softest sweetheart! Loved curling up next to us on the sofa for afternoon naps and was an absolute angel with everyone."</p>
+                  <div class="guest-footer">
+                    <span>🏠 Stayed 14 Days</span>
+                    <span>100% Cage-Free</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 2: Max -->
+              <article class="guest-card" data-category="daycare">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/beagle-max.jpg" alt="Max the Beagle wearing his bone nametag" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Daycare &amp; Boarding</span>
+                  <span class="guest-badge-breed">🐶 Beagle</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Max</h3>
+                    <span class="guest-tag">Curious Explorer</span>
+                  </div>
+                  <p class="guest-quote">"A delightful bundle of energy! Loved exploring our safe play lounge, solving interactive puzzle toys, and receiving gentle ear scratches."</p>
+                  <div class="guest-footer">
+                    <span>🏠 Regular Guest</span>
+                    <span>100% Cage-Free</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 3: Ghost -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/husky.jpg" alt="Ghost the blue-eyed Siberian Husky on turf" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">AC Suite Boarding</span>
+                  <span class="guest-badge-breed">❄️ Siberian Husky</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Ghost</h3>
+                    <span class="guest-tag">AC Ice Prince</span>
+                  </div>
+                  <p class="guest-quote">"Thrived in our 24/7 air-conditioned climate suites. Loved playing on the turf and receiving cool belly rubs after morning walks."</p>
+                  <div class="guest-footer">
+                    <span>❄️ Stayed 7 Days</span>
+                    <span>Climate Controlled</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 4: Leo -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/pug-flight-crate.jpg" alt="Leo the calm Pug resting comfortably" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Cozy Boarding</span>
+                  <span class="guest-badge-breed">🐾 Pug</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Leo</h3>
+                    <span class="guest-tag">Cuddle Bug</span>
+                  </div>
+                  <p class="guest-quote">"Gentle, calm, and sweet! Enjoyed his cool afternoon naps in our AC suite, relaxing right beside us, and receiving loving human touch."</p>
+                  <div class="guest-footer">
+                    <span>❄️ AC Luxury Suite</span>
+                    <span>Sweet Companion</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 5: Simba -->
+              <article class="guest-card" data-category="daycare">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/golden-beach.jpg" alt="Simba the Golden Retriever running on the beach" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Beach Outing &amp; Stay</span>
+                  <span class="guest-badge-breed">🏖️ Golden Retriever</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Simba</h3>
+                    <span class="guest-tag">Beach Champion</span>
+                  </div>
+                  <p class="guest-quote">"Pure golden sunshine! Loved morning beach runs by the waves, splashing in fresh water, and snuggling up on orthopedic cushions."</p>
+                  <div class="guest-footer">
+                    <span>🌊 Regular Guest</span>
+                    <span>Beach Outings</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 6: Daisy -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/indie-dog.jpg" alt="Daisy the alert and sweet Indie dog with pink collar" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Home Boarding</span>
+                  <span class="guest-badge-breed">🇮🇳 Indie / Desi Dog</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Daisy</h3>
+                    <span class="guest-tag">Smart Sweetheart</span>
+                  </div>
+                  <p class="guest-quote">"Incredibly sharp, affectionate, and alert. Blended right into our family routine and loved afternoon treats and sofa cuddles."</p>
+                  <div class="guest-footer">
+                    <span>❤️ All Breeds Loved</span>
+                    <span>Family Favorite</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 7: Shadow -->
+              <article class="guest-card" data-category="daycare">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/black-lab.jpg" alt="Shadow the handsome Black Labrador smiling" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Daycare &amp; Boarding</span>
+                  <span class="guest-badge-breed">🐾 Black Labrador</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Shadow</h3>
+                    <span class="guest-tag">Social Butterfly</span>
+                  </div>
+                  <p class="guest-quote">"Always has a radiant smile! A gentle pack leader during daycare play sessions who welcomed every newcomer with friendly tail wags."</p>
+                  <div class="guest-footer">
+                    <span>☀️ 12-Day Stay</span>
+                    <span>Playgroup Leader</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 8: Oreo -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/shih-tzu-happy.jpg" alt="Oreo the fluffy Shih Tzu smiling on floor" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Cozy Boarding</span>
+                  <span class="guest-badge-breed">✨ Shih Tzu</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Oreo</h3>
+                    <span class="guest-tag">Sweet Snuggler</span>
+                  </div>
+                  <p class="guest-quote">"Treated like absolute royalty! Loved curling up on the soft cushions, customized feeding times, and receiving gentle, loving affection all day long."</p>
+                  <div class="guest-footer">
+                    <span>🛋️ Cozy Boarding</span>
+                    <span>5 Days Staycation</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 9: Buddy -->
+              <article class="guest-card" data-category="daycare">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/golden-mix.jpg" alt="Buddy the golden lab mix with bright happy smile" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Daycare Regular</span>
+                  <span class="guest-badge-breed">🐕 Lab / Golden Mix</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Buddy</h3>
+                    <span class="guest-tag">Sunshine Smile</span>
+                  </div>
+                  <p class="guest-quote">"Has the most contagious smile in the kennel! Always enthusiastic for interactive puzzle toys, garden fetch, and treat games."</p>
+                  <div class="guest-footer">
+                    <span>🎾 Daycare Regular</span>
+                    <span>Ball Enthusiast</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pet 10: Bella -->
+              <article class="guest-card" data-category="boarding">
+                <div class="guest-media">
+                  <img class="guest-photo" src="images/beagle-puppy.jpg" alt="Bella the cute Beagle puppy on cozy bed" width="480" height="384" loading="lazy" />
+                  <span class="guest-badge-stay">Puppy Staycation</span>
+                  <span class="guest-badge-breed">🐶 Beagle Puppy</span>
+                </div>
+                <div class="guest-body">
+                  <div class="guest-header">
+                    <h3 class="guest-name">Bella</h3>
+                    <span class="guest-tag">Little Sweetheart</span>
+                  </div>
+                  <p class="guest-quote">"Energetic, affectionate, and adorable! Claimed her favorite plush bed on day one and loved playing with squeaky toys."</p>
+                  <div class="guest-footer">
+                    <span>🛋️ Cozy Boarding</span>
+                    <span>Family Favorite</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Carousel Indicator Dots -->
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Select pet slide"></div>
+        </div>
+
+        <!-- Quick Banner below carousel -->
+        <div class="guest-cta-strip center">
+          <p>Want your pup to make wonderful new memories with us? <a href="#contact" class="inline-link"><strong>Book their cage-free stay &rarr;</strong></a></p>
         </div>
       </div>
     </section>
@@ -227,33 +496,189 @@
       </div>
     </section>
 
-    <!-- ===================== TESTIMONIALS ===================== -->
-    <section class="section section-tint" id="testimonials">
+    <!-- ===================== TESTIMONIALS (AUTO-ROTATING CAROUSEL) ===================== -->
+    <section class="section section-tint reviews-section" id="testimonials">
       <div class="container">
         <div class="section-head center">
-          <span class="kicker">Happy Pet Parents</span>
+          <span class="kicker">Parent Testimonials</span>
           <h2>What Other Pet Parents Say 💬</h2>
-          <p class="section-sub">Honest feedback from parents who experienced our home-style care firsthand.</p>
+          <p class="section-sub">Real reviews from pet parents who experienced our home kennel firsthand. These reviews rotate automatically — pause anytime by hovering!</p>
         </div>
 
-        <div class="cards-grid">
-          <figure class="card quote-card">
-            <div class="stars">★★★★★</div>
-            <blockquote>"I was terrified of leaving my Rottweiler, Bruno, anywhere because of the unfair stigma around the breed. K9 Pet Care took him in like he was their own chubby child! Seeing him sleep right next to the owner on the couch via the live camera app completely cured my travel anxiety. They truly love every single dog, unconditionally."</blockquote>
-            <figcaption>
-              <span class="avatar">🐕</span>
-              <span><strong>Sarah M.</strong><small>Parent of Bruno (Rottweiler)</small></span>
-            </figcaption>
-          </figure>
+        <!-- Reviews Carousel Container -->
+        <div class="reviews-carousel-wrap">
+          <div class="reviews-top-bar">
+            <div class="reviews-badge">
+              <span class="reviews-badge-dot"></span>
+              <strong>5.0 Rating • Verified Pet Parents</strong>
+            </div>
+            <div class="reviews-controls">
+              <span class="reviews-counter" id="reviewsCounter" aria-live="polite">Review 1–2 of 8</span>
+              <button class="carousel-btn reviews-btn" id="reviewsPrev" aria-label="Previous review">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="carousel-btn reviews-btn" id="reviewsNext" aria-label="Next review">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
 
-          <figure class="card quote-card">
-            <div class="stars">★★★★★</div>
-            <blockquote>"The level of cleanliness here is astonishing. My older dog has a weak immune system, so commercial kennels were out of the question. K9 Pet Care's disinfected, air-conditioned rooms and constant video updates made me feel so secure. It's not just a boarding house; it's a premium canine resort with a massive heart."</blockquote>
-            <figcaption>
-              <span class="avatar">🐩</span>
-              <span><strong>David K.</strong><small>Parent of Cooper (Maltese Mix)</small></span>
-            </figcaption>
-          </figure>
+          <div class="reviews-viewport" id="reviewsViewport" tabindex="0" aria-label="Pet parent reviews carousel">
+            <div class="reviews-track" id="reviewsTrack">
+
+              <!-- Review 1: Bruno & Sarah M. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"I was terrified of leaving my Rottweiler anywhere because of unfair breed stereotypes. K9 Pet Care welcomed Bruno like their own child! Seeing him sleep right next to the owner on the couch via the live camera app completely cured my travel anxiety. They truly love every single dog unconditionally."</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/rottweiler-bruno.jpg" alt="Bruno the Rottweiler" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Bruno">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Sarah M.</strong>
+                    <small>Parent of Bruno • Rottweiler</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 2: Max & Vikram R. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"Max has boundless puppy energy and can get anxious in new places, but K9 Pet Care gave him the warmest home stay! Seeing him run freely in their spacious playrooms and snuggle with the caretakers gave us complete peace of mind. When we came to pick him up, he was giving everyone goodbye kisses!"</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/beagle-max.jpg" alt="Max the Beagle" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Max">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Vikram &amp; Ananya R.</strong>
+                    <small>Parents of Max • Beagle</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 3: Leo & Capt. Rajesh K. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"Leaving Leo while traveling is always nerve-wracking because pugs need close observation and proper AC climate. K9 Pet Care watched over him like their own child. Spotless clean rooms, continuous attention, and direct video updates every single day made our trip completely worry-free!"</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/pug-flight-crate.jpg" alt="Leo the Pug" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Leo">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Capt. Rajesh Kumar</strong>
+                    <small>Parent of Leo • Pug</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 4: Ghost & Meera S. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"With Chennai's heat and humidity, finding a facility that guarantees genuine round-the-clock air conditioning for a double-coated Siberian Husky is near impossible. K9 Pet Care kept Ghost in pure arctic comfort. Spotless hygiene, constant video updates, and loving human touch made him feel right at home."</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/husky.jpg" alt="Ghost the Siberian Husky" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Ghost">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Meera Sundaram</strong>
+                    <small>Parent of Ghost • Siberian Husky</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 5: Simba & Karthik N. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"Simba had the vacation of a lifetime! From morning beach runs and shaded garden play to peaceful afternoon naps in AC rooms, he was loved and cared for just like at home. He came home smelling fresh and clean, and slept happily like a baby for two straight days. We will never use a commercial kennel again!"</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/golden-beach.jpg" alt="Simba the Golden Retriever" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Simba">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Karthik &amp; Deepa N.</strong>
+                    <small>Parents of Simba • Golden Retriever</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 6: Daisy & Dr. Lakshmi -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"So many commercial kennels discriminate against Desi Indies, but K9 Pet Care embraced Daisy with pure warmth and affection. The caretakers are deeply knowledgeable about canine body language, and their hospital-grade disinfection protocols gave me total confidence while I was traveling."</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/indie-dog.jpg" alt="Daisy the Indie dog" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Daisy">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Dr. Lakshmi Narayan</strong>
+                    <small>Parent of Daisy • Indie / Desi Dog</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 7: Oreo & Priya S. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"Oreo is a delicate Shih Tzu with sensitive skin who gets anxious around new people. The team was so gentle and patient with him! Seeing him happily snuggled on the couch via their 24/7 live cam melted my heart. Truly a loving home away from home."</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/shih-tzu-happy.jpg" alt="Oreo the Shih Tzu" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Oreo">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Priya S.</strong>
+                    <small>Parent of Oreo • Shih Tzu</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <!-- Review 8: Shadow & Arjun V. -->
+              <figure class="card review-card">
+                <div class="review-card-head">
+                  <div class="stars">★★★★★</div>
+                </div>
+                <blockquote>"We traveled to Europe for 12 days and left Shadow in K9 Pet Care's hands. Checking in on the 24/7 camera app every evening from our hotel and seeing him sleeping peacefully on an orthopedic bed alongside the caretakers was priceless. Outstanding service, true pet lovers, and 100% transparent."</blockquote>
+                <figcaption class="reviewer-meta">
+                  <div class="reviewer-pet-wrap">
+                    <img class="reviewer-pet-thumb" src="images/black-lab.jpg" alt="Shadow the Black Labrador" width="60" height="60" loading="lazy" />
+                    <span class="reviewer-pet-badge" title="Shadow">🐾</span>
+                  </div>
+                  <div class="reviewer-info">
+                    <strong>Arjun V.</strong>
+                    <small>Parent of Shadow • Black Labrador</small>
+                  </div>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+          <!-- Reviews Indicator Dots -->
+          <div class="reviews-dots" id="reviewsDots" role="tablist" aria-label="Select review slide"></div>
+        </div>
+
+        <div class="reviews-footer-note center">
+          <p>⭐️ Rated 5.0 out of 5 by 100+ pet parents across Chennai. <a href="#contact" class="inline-link"><strong>Read more or book a visit &rarr;</strong></a></p>
         </div>
       </div>
     </section>
@@ -303,6 +728,7 @@
         <h4>Explore</h4>
         <a href="#philosophy">About Us</a>
         <a href="#services">Services</a>
+        <a href="#guests">Happy Guests</a>
         <a href="#difference">Why Choose Us</a>
         <a href="#testimonials">Reviews</a>
       </div>
@@ -311,7 +737,7 @@
         <h4>Services</h4>
         <a href="#services">Elite Boarding</a>
         <a href="#services">Doggy Daycare</a>
-        <a href="#services">Positive Training</a>
+        <a href="#services">Doorstep Pet Taxi</a>
       </div>
 
       <div class="footer-col footer-contact">
