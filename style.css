@@ -212,8 +212,10 @@ h3 { font-size: 1.3rem; }
 /* ===================== EXPANDED SERVICES ===================== */
 .cards-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 28px;
 }
 .service-pill {
   display: inline-block;
@@ -842,9 +844,7 @@ h3 { font-size: 1.3rem; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* ===================== RESPONSIVE ===================== */
-@media (max-width: 1100px) {
-  .cards-services { grid-template-columns: repeat(3, 1fr); }
-}
+
 
 @media (max-width: 940px) {
   .main-nav {
