@@ -498,7 +498,7 @@ if (navToggle && mainNav) {
 
 // --- Scroll reveal animations ---
 const revealTargets = document.querySelectorAll(
-  '.card, .guest-card, .review-card, .carousel-container, .reviews-carousel-wrap, .carousel-filters, .section-head, .compare-wrap, .split-copy, .split-media, .badges-row, .cta-inner, .narrow.center'
+  '.card, .guest-card, .review-card, .training-evaluation-banner, .carousel-container, .reviews-carousel-wrap, .carousel-filters, .section-head, .compare-wrap, .split-copy, .split-media, .badges-row, .cta-inner, .narrow.center'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
